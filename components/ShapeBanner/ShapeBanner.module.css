@@ -1,0 +1,34 @@
+.wrapper {
+  width: var(--sb-width, 80vw);
+  max-width: var(--sb-max-width, 800px);
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  clip-path: url(#itauShape);
+  position: relative;
+  overflow: hidden;
+  background: var(--sb-bg-color, aqua);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.imageWrapper {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 5vw;
+}
